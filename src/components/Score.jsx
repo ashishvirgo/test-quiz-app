@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Score = () => {
+const Score = ({score}) => {
   return (
-    <div>
-      
+    <div className='score'>
+      Your Score is {score} out of 
     </div>
   )
 }

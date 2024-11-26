@@ -3,15 +3,17 @@ import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
     const navigate=useNavigate();
-    
+    const cname=document.getElementById('name');
   return (
-    <div>
+    <div className='home-container'>
       <h1>ABES QUIZ PLATEFORM</h1>
-      CONTESTENT NAME
+      <div className='start'>CONTESTENT NAME
       <input type="text" id="name"/>
-      <button onClick={()=>{
+        </div>
+        <div><button onClick={(cname)=>{
         navigate('/quiz')
-      }}>Start Quiz</button>
+      }}>Start Quiz</button></div>
+      
     </div>
   )
 }
